@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "GPA Calculator",
+    "version": "1.0",
+    "description": "Calculates GPA from the student transcript page on fap.fpt.edu.vn.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://fap.fpt.edu.vn/Grade/StudentTranscript.aspx"],
+            "js": ["content.js"]
+        }
+    ]
+}
